@@ -26,7 +26,6 @@ body {
 .container {
     padding: 0 2rem 0 4rem; 
     margin: 0 auto;
-    max-width: 1200px;
     overflow: hidden;
 }
 
@@ -102,6 +101,7 @@ nav h4 {
     position: relative;
     width: 100%;
     z-index: -1;
+    overflow: visible;
 }
 
 
