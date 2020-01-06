@@ -130,16 +130,24 @@ nav button {
 
 .shorten-section {
     position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 3.0rem;
     background-color: #3a3053;
     background-image: url("./images/bg-shorten-desktop.svg");
+    background-size: cover;
+    padding: 3.0rem 2rem;
     border-radius: 10px;
-
 }
 
-.shorten-section input {
+.shorten-section.alert-div {
+    padding: 3.0rem 2rem 1.5rem;
+}
+
+.shortest-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#shorten-input {
     border-radius: 10px;
     flex-grow: 1;
     flex-shrink: 1;
@@ -153,7 +161,7 @@ nav button {
     outline: none;
 }
 
-.shorten-section button {
+.shortest-section button {
     border-radius: 10px;
     flex-shrink: 1;
 }
@@ -354,6 +362,31 @@ footer .footer-grid {
     background-color: black;
 }
 
+#shorten-input.alert-input {
+    color: #e6686b;
+    border: 2px solid #e6686b;
+}
+
+.alert {
+    margin-left: .25rem;
+    margin-top: .25rem;
+    color: #e6686b;
+    font-size: 12px;
+}
+
+#shorten-input.success-input {
+    color: #00993b;
+    border: 2px solid #00993b;
+}
+
+.success {
+    margin-left: .25rem;
+    margin-top: .25rem;
+    color: #00993b;
+    font-size: 12px;
+}
+
+
 .hamburger {
     display: none;
     position: absolute;
@@ -438,12 +471,21 @@ footer .footer-grid {
     }
 
     .shorten-section {
-        justify-content: center;
-        flex-direction: column;
         padding: 1.5rem;
     }
 
-    .shorten-section input {
+    .shorten-section.alert-div {
+        padding: 1.5rem 1.5rem .5rem;
+    }
+    
+
+    .shortest-section {
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    #shorten-input {
         margin: 0 0 1rem;
         padding: .75rem 1rem;
     }
